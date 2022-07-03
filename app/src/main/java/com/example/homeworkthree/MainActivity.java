@@ -84,17 +84,20 @@ public class MainActivity extends AppCompatActivity {
                         inputStr.append("0");
                         break;
                     case R.id.button_point:
-                        if(dotIsPresent(inputStr)){
+                        if (dotIsPresent(inputStr)) {
 
-                        }
-                        else{
+                        } else {
                             inputStr.append(".");
                         }
 
                         break;
                     case R.id.button_plusOrMinus:
+                        if(minusIsPresent(inputStr)) {
+                        } else {
                         inputStr.append("-");
-                        break;
+                    }
+
+                    break;
 
 
                 }
@@ -179,7 +182,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             return true;
         }
-
     }
 
+    public boolean minusIsPresent(StringBuilder inputStr) {
+        if (inputStr.indexOf("-") == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
