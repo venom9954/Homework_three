@@ -11,11 +11,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView text_output;
     private String firstArg;
     private String secondArg;
-    Double result;
+    private Double result;
     private String operator;
 
 
-    private  StringBuilder inputStr = new StringBuilder();
+    private StringBuilder inputStr = new StringBuilder();
 
 
     @Override
@@ -84,7 +84,13 @@ public class MainActivity extends AppCompatActivity {
                         inputStr.append("0");
                         break;
                     case R.id.button_point:
-                        inputStr.append(".");
+                        if(dotIsPresent(inputStr)){
+
+                        }
+                        else{
+                            inputStr.append(".");
+                        }
+
                         break;
                     case R.id.button_plusOrMinus:
                         inputStr.append("-");
@@ -120,7 +126,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
 
-
                 }
                 text_output.setText(operator);
             }
@@ -141,16 +146,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 secondArg = text_output.getText().toString();
 
-                if(operator == "/"){
+                if (operator == "/") {
                     result = Double.parseDouble(firstArg) / Double.parseDouble(secondArg);
-                }
-                else if(operator == "-") {
+                } else if (operator == "-") {
                     result = Double.parseDouble(firstArg) - Double.parseDouble(secondArg);
-                }
-                else if(operator == "+") {
+                } else if (operator == "+") {
                     result = Double.parseDouble(firstArg) + Double.parseDouble(secondArg);
-                }
-                else if (operator == "*") {
+                } else if (operator == "*") {
                     result = Double.parseDouble(firstArg) * Double.parseDouble(secondArg);
                 }
                 text_output.setText(result.toString());
@@ -168,7 +170,16 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
     }
 
+    public boolean dotIsPresent(StringBuilder inputStr) {
+        if (inputStr.indexOf(".") == -1) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
 
 }
