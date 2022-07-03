@@ -15,5 +15,7 @@
     <string name="point_button">.</string>
     <string name="_0">0</string>
     <string name="equals_button">=</string>
-    <string name="multiply_button">x</string>
+    <string name="multiply_button">*</string>
+    <string name="ac">AC</string>
+    <string name="plusOrMinus">-/+</string>
 </resources>
