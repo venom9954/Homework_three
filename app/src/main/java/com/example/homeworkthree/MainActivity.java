@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+     //   setTheme(R.style.MyStyle);
         setContentView(R.layout.activity_main);
 
         text_output = findViewById(R.id.text_output);
