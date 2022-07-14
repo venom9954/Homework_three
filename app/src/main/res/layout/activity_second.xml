@@ -15,10 +15,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/theme_default_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Default_theme">
+
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/theme_one_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/theme_1">
+
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/theme_two_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/theme_2">
 
         </com.google.android.material.radiobutton.MaterialRadioButton>
 

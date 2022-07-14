@@ -14,6 +14,24 @@
         <!-- Customize your theme here. -->
 
     </style>
+
+    <style name="myTheme1" parent="Theme.HomeworkThree">
+        <item name="colorPrimary">@color/red_600</item>
+        <item name="colorPrimaryVariant">@color/red_100</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/red_600</item>
+        <item name="colorSecondaryVariant">@color/red_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="myTheme2" parent="Theme.HomeworkThree">
+        <item name="colorPrimary">@color/Green_100</item>
+        <item name="colorPrimaryVariant">@color/Green_100</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/Green_100</item>
+        <item name="colorSecondaryVariant">@color/Green_100</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
     
     <style name="MyStyle">
 
