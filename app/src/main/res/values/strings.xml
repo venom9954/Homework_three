@@ -18,4 +18,6 @@
     <string name="multiply_button">*</string>
     <string name="ac">AC</string>
     <string name="plusOrMinus">-/+</string>
+    <string name="choose_theme">Выбор темы</string>
+    <string name="theme_1">Тема 1</string>
 </resources>

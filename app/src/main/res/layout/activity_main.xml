@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/MyStyle">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/choose_theme_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text= "@string/choose_theme"
+        />
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/text_output"
         android:layout_width="match_parent"

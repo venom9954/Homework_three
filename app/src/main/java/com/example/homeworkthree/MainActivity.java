@@ -2,6 +2,7 @@ package com.example.homeworkthree;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private String secondArg;
     private Double result;
     private String operator;
+    Button choose_theme_button;
 
     int[] numbersId = new int[]{
             R.id.button_0,
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
      //   setTheme(R.style.MyStyle);
         setContentView(R.layout.activity_main);
+        themes();
+
 
         text_output = findViewById(R.id.text_output);
 
@@ -172,6 +176,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 text_output.setText("");
                 inputStr.setLength(0);
+            }
+        });
+    }
+
+    public void themes(){
+        choose_theme_button = findViewById(R.id.choose_theme_button);
+        choose_theme_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
             }
         });
     }
