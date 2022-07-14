@@ -1,5 +1,6 @@
 package com.example.homeworkthree;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private Double result;
     private String operator;
     Button choose_theme_button;
+    public static  int REQUEST_CODE = 999;
+    public static String KEY_INTENT = "key1";
 
     int[] numbersId = new int[]{
             R.id.button_0,
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  setTheme(MyApp.currentTheme);
+        setTheme(MyApp.currentTheme);
         setContentView(R.layout.activity_main);
         themes();
 

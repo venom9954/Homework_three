@@ -22,4 +22,5 @@
     <string name="theme_1">Тема 1</string>
     <string name="theme_2">Тема 2</string>
     <string name="Default_theme">Стандартная тема</string>
+    <string name="return_to">Возврат к калькулятору</string>
 </resources>
